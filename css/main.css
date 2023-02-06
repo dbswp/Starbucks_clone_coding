@@ -23,12 +23,16 @@ img {
   width: 1100px;
   height: 120px;
   margin: 0 auto; /*수평정렬 */
-  background-color: tomato;
 }
 
 /* HEADER */
 header {
-  background-color: orange;
+  width: 100%;
+  position: fixed;
+  background-color: #f6f5ef;
+  border-top: 2px solid black;
+  border-bottom: 1px solid #c8c8c8;
+  z-index: 1;
 }
 
 header .inner a.logo {
@@ -36,8 +40,121 @@ header .inner a.logo {
   margin: auto;
   top: 0;
   bottom: 0;
-  /* left: 0;
-  right: 0;
-  width: 75px; */
+  left: 0;
   height: 75px;
+  width: 75px;
+}
+
+/* sub-menu */
+header .inner .sub-menu {
+  display: flex;
+  position: absolute;
+  right: 50px;
+  top: 10px;
+}
+header .inner .sub-menu .sub-menu__menu {
+  display: flex;
+  align-items: center;
+}
+header .inner .sub-menu .sub-menu__menu > li {
+  position: relative;
+}
+header .inner .sub-menu .sub-menu__menu > li:not(:first-child)::before {
+  content: "";
+  display: block;
+  width: 1px;
+  height: 13px;
+  background-color: #656565;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+header .inner .sub-menu .sub-menu__menu > li > a {
+  color: #656565;
+  padding: 10px 15px;
+  font-size: 13px;
+}
+header .inner .sub-menu .sub-menu__menu > li > a:hover {
+  text-decoration: underline;
+}
+header .inner .sub-menu .search {
+  position: relative;
+  cursor: pointer;
+}
+header .inner .sub-menu .search > input {
+  width: 36px;
+  height: 34px;
+  padding: 4px 10px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  border-radius: 5px;
+  outline: none;
+  transition: width 0.4s;
+}
+header .inner .sub-menu .search > .material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 700, "GARD" 0, "opsz" 48;
+  position: absolute;
+  height: 24px;
+  right: 3px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+header .inner .sub-menu .search > input::placeholder {
+  color: transparent;
+}
+header .inner .sub-menu .search > input:focus {
+  font-size: 13px;
+  width: 190px;
+  color: #656565;
+  border-color: #007042;
+}
+header .inner .sub-menu .search > input:focus::placeholder {
+  font-size: 13px;
+  color: #656565;
+}
+
+/* main-menu */
+header .inner .main-menu {
+  display: flex;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+header .inner .main-menu .item {
+}
+header .inner .main-menu li.item .item__name {
+  padding: 10px 20px 34px 20px;
+  font-size: 13px;
+}
+header .inner .main-menu li.item:hover .item__name {
+  cursor: pointer;
+  background-color: #2c2a29;
+  color: #669900;
+  text-decoration: underline;
+}
+/* main menu에 속한 div */
+header .inner .main-menu .item .item__contents {
+  display: none;
+  position: fixed;
+  background-color: orange;
+  width: 100%;
+  height: 100px;
+  left: 0;
+  top: 120px;
+}
+header .inner .main-menu .item:hover .item__contents {
+  display: block;
+}
+header .inner .main-menu .item .item__contents .item__contents__menu {
+}
+header .inner .main-menu .item:hover .item__contents {
+}
+.main-menu .item .item__contents .item__contents__menu .inner li > a {
+}
+.main-menu .item .item__contents .item__contents__menu .inner li > ul {
+}
+.main-menu .item .item__contents .item__contents__menu .inner li > ul > li {
 }
