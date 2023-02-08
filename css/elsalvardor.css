@@ -88,3 +88,40 @@
   left: 260px;
   top: 270px;
 }
+
+/* favorite */
+.favorite {
+  position: relative;
+  height: 800px;
+  background-image: url("../images (1)/images/fav_bg.png");
+  background-attachment: fixed;
+  background-size: 115% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.favorite .inner {
+  display: flex;
+  align-items: center;
+  position: relative;
+  top: 50px;
+}
+.favorite .inner .favorite__contents {
+  position: relative;
+  height: 100%;
+}
+.favorite .inner .favorite__contents .favorite_text1 {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.favorite .inner .favorite__contents .favorite_text2 {
+  position: absolute;
+  top: 150px;
+}
+.favorite .inner .favorite__contents a {
+}
+.favorite .inner .favorite__items {
+}
+
+.favorite .inner .favorite__items img {
+}
