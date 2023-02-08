@@ -1,0 +1,90 @@
+.elsalvardor {
+  position: relative;
+  height: 570px;
+  background-image: url("../images (1)/images/elsalvador_bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.elsalvardor .inner {
+  position: relative;
+  height: 100%;
+  top: 70px;
+}
+.elsalvardor .inner .elsalvardor__item {
+  position: absolute;
+  left: 150px;
+  width: 310px;
+  transform: translateX(-700px);
+  opacity: 0;
+  transition: 2.5s;
+}
+.elsalvardor:hover .inner .elsalvardor__item,
+.elsalvardor:hover .inner .elsalvardor__contents {
+  transform: translateX(0px);
+  opacity: 1;
+}
+.elsalvardor .inner .elsalvardor__contents {
+  position: absolute;
+  width: 339px;
+  top: 110px;
+  right: 12%;
+  transform: translateX(900px);
+  opacity: 0;
+  transition: 2.5s;
+}
+.elsalvardor .inner .elsalvardor__contents .item-text {
+  margin-bottom: 40px;
+}
+
+/* etiopia */
+.etiopia {
+  position: relative;
+  top: 0;
+  height: 404px;
+  background-image: url("../images (1)/images/ethiopia_bg.png");
+  background-size: 105%;
+  background-position: center;
+}
+.etiopia .inner {
+  position: relative;
+  height: 100%;
+}
+.etiopia::after {
+  position: absolute;
+  content: "";
+  background-image: url("../images (1)/images/ethiopia_after.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 360px;
+  height: 404px;
+  bottom: 0;
+  right: 0;
+  overflow: hidden;
+}
+.etiopia::before {
+  content: "";
+  position: absolute;
+  background-image: url("../images (1)/images/ethiopia_before.png");
+  width: 425px;
+  height: 404px;
+  bottom: 0;
+  left: -50px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.etiopia .inner .etiopia__contents {
+  position: absolute;
+  width: 496px;
+  left: 0;
+  top: 120px;
+}
+.etiopia .inner .etiopia__item {
+  position: absolute;
+  left: -500px;
+}
+.etiopia .inner .btn.btn--gold {
+  position: absolute;
+  left: 260px;
+  top: 270px;
+}
