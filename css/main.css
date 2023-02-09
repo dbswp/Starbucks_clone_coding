@@ -25,6 +25,11 @@ img {
   width: 1100px;
   margin: 0 auto; /*수평정렬 */
 }
+.strong {
+  font-weight: 800;
+}
+
+/* button css */
 .btn {
   display: inline-block;
   padding: 6px 20px;
@@ -43,10 +48,6 @@ img {
   color: white;
   text-decoration: underline;
 }
-.strong {
-  font-weight: 800;
-}
-
 .btn--brown {
   color: #633510;
   border-color: #633510;
