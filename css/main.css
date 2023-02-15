@@ -164,6 +164,10 @@ header .inner .sub-menu .search > input {
   outline: none;
   transition: width 0.4s;
 }
+header .inner .sub-menu .search > input::placeholder {
+  color: transparent;
+}
+
 header .inner .sub-menu .search > .material-symbols-outlined {
   font-variation-settings: "FILL" 0, "wght" 700, "GARD" 0, "opsz" 48;
   position: absolute;
@@ -173,10 +177,7 @@ header .inner .sub-menu .search > .material-symbols-outlined {
   bottom: 0;
   margin: auto;
 }
-header .inner .sub-menu .search > input::placeholder {
-  color: transparent;
-}
-header .inner .sub-menu .search > input:focus {
+header .inner .sub-menu .search > input.active {
   font-size: 13px;
   width: 190px;
   color: #656565;
