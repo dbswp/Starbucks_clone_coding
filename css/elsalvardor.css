@@ -350,11 +350,11 @@ footer .inner .footer__btn {
   margin-top: 10px;
   text-align: center;
 }
-footer .inner .footer__btn .btn {
+footer .inner .footer__btn > .btn {
   margin: 10px 5px 10px 0;
   font-size: 12px;
 }
-footer .inner .footer__btn .btn:hover {
+footer .inner .footer__btn > .btn:hover {
   color: white;
   background-color: transparent;
   text-decoration: underline;
