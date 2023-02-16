@@ -19,8 +19,8 @@
   opacity: 0;
   transition: 2.5s;
 }
-.elsalvardor:hover .inner .elsalvardor__item,
-.elsalvardor:hover .inner .elsalvardor__contents {
+.elsalvardor.animate .inner .elsalvardor__item,
+.elsalvardor.animate .inner .elsalvardor__contents {
   transform: translateX(0px);
   opacity: 1;
 }
@@ -42,6 +42,7 @@
   position: relative;
   top: 0;
   height: 404px;
+  overflow: hidden;
   background-image: url("../images (1)/images/ethiopia_bg.png");
   background-size: 105%;
   background-position: center;
@@ -82,6 +83,17 @@
 .etiopia .inner .etiopia__item {
   position: absolute;
   left: -500px;
+  opacity: 0;
+}
+.etiopia.animate::after,
+.etiopia.animate::before {
+  transition: 0.5s;
+  opacity: 1;
+}
+.etiopia.animate .inner .etiopia__item {
+  transition: 1.5s;
+  transition-delay: 0.8s;
+  opacity: 1;
 }
 .etiopia .inner .btn.btn--gold {
   position: absolute;
@@ -141,8 +153,8 @@
   left: 330px;
 }
 
-.favorite:hover .inner .pickfav,
-.favorite:hover .inner .pickfav2 {
+.favorite.animate .inner .pickfav,
+.favorite.animate .inner .pickfav2 {
   transform: translateX(0);
 }
 
@@ -172,7 +184,8 @@
   opacity: 0;
   transition: 2s;
 }
-.magazine:hover .inner .magazine__item {
+.magazine.animate .inner .magazine__item {
+  transform: translateX(0px);
   opacity: 1;
 }
 .magazine .inner .btn.btn--black {
@@ -242,17 +255,17 @@
   right: 340px;
   transform: translateX(900px);
 }
-.findstore:hover .inner .findstore__contents1,
-.findstore:hover .inner .findstore__contents2 {
+.findstore.animate .inner .findstore__contents1,
+.findstore.animate .inner .findstore__contents2 {
   transform: translateX(0);
 }
-.findstore:hover .inner .findstore__item1,
-.findstore:hover .inner .findstore__item2,
-.findstore:hover .inner .findstore__item3,
-.findstore:hover .inner .findstore__item4 {
+.findstore.animate .inner .findstore__item1,
+.findstore.animate .inner .findstore__item2,
+.findstore.animate .inner .findstore__item3,
+.findstore.animate .inner .findstore__item4 {
   opacity: 1;
 }
-.findstore:hover .inner .btn.btn--black {
+.findstore.animate .inner .btn.btn--black {
   transition: transform 2.5s;
   transform: translateX(0);
 }
@@ -287,7 +300,7 @@ footer .inner .footer__menu .left .menu > li > ul > a {
   font-size: 14px;
   line-height: 40px;
 }
-footer .inner .footer__menu .left .menu .manu-a:hover {
+footer .inner .footer__menu .left .menu .manu-a.animate {
   text-decoration: underline;
   color: #ffffff;
   font-size: 14px;
@@ -298,7 +311,7 @@ footer .inner .footer__menu .left .menu > li > ul > li {
   font-size: 12px;
   line-height: 24px;
 }
-footer .inner .footer__menu .left .menu .menu-list:hover {
+footer .inner .footer__menu .left .menu .menu-list.animate {
   text-decoration: underline;
   color: #ffffff;
   font-size: 12px;
@@ -342,7 +355,7 @@ footer .inner .footer__submenu > ul > li:first-child {
 footer .inner .footer__submenu .counter {
   padding: 0;
 }
-footer .inner .footer__submenu > ul > li:hover {
+footer .inner .footer__submenu > ul > li.animate {
   text-decoration: underline;
   cursor: pointer;
 }
@@ -354,7 +367,7 @@ footer .inner .footer__btn > .btn {
   margin: 10px 5px 10px 0;
   font-size: 12px;
 }
-footer .inner .footer__btn > .btn:hover {
+footer .inner .footer__btn > .btn.animate {
   color: white;
   background-color: transparent;
   text-decoration: underline;

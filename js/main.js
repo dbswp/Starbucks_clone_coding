@@ -73,3 +73,53 @@ promotionToggleBtn.addEventListener("click", function () {
     promotionToggleBtn.classList.remove("show");
   }
 });
+
+// viual 애니메이션 파트
+window.onload = function () {
+  const visualSection = document.querySelector(".visual");
+  visualSection.classList.add("animate");
+};
+
+// 엘살바도르 애니메니션 파트 - 스크롤
+window.addEventListener("scroll", function () {
+  if (window.scrollY > 192) {
+    const elsalvardorSection = document.querySelector(".elsalvardor");
+    elsalvardorSection.classList.add("animate");
+  }
+  if (window.scrollY > 731) {
+    const etiopiaSection = document.querySelector(".etiopia");
+    etiopiaSection.classList.add("animate");
+  }
+  if (window.scrollY > 1220) {
+    const etiopiaSection = document.querySelector(".etiopia");
+    etiopiaSection.classList.add("animate");
+  }
+  if (window.scrollY > 1948) {
+    const magazineSection = document.querySelector(".magazine");
+    magazineSection.classList.add("animate");
+  }
+  if (window.scrollY > 210) {
+    const elsalvardorSection = document.querySelector(".elsalvardor");
+    elsalvardorSection.classList.add("animate");
+  }
+});
+
+// window.addEventListener("scroll", function () {
+//   console.log(window.scrollY);
+//   if (window.scrollY > 2357) {
+//     const findstoreSection = document.querySelector(".findstore");
+//     findstoreSection.classList.add("animate");
+//   } else if (window.scrollY > 1970) {
+//     const magazineSection = document.querySelector(".magazine");
+//     magazineSection.classList.add("animate");
+//   } else if (window.scrollY > 1220) {
+//     const favoriteSection = document.querySelector(".favorite");
+//     favoriteSection.classList.add("animate");
+//   } else if (window.scrollY > 760) {
+//     const etiopiaSection = document.querySelector(".etiopia");
+//     etiopiaSection.classList.add("animate");
+//   } else if (window.scrollY > 210) {
+//     const elsalvardorSection = document.querySelector(".elsalvardor");
+//     elsalvardorSection.classList.add("animate");
+//   }
+// });
