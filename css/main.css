@@ -491,10 +491,6 @@ header .badges .badge img {
   width: 150px;
 }
 /* PAGEINATION */
-.notice .promotion .swiper-pagination {
-  /* width: 100px;
-  height: 50px; */
-}
 .notice .promotion .swiper-button-prev,
 .notice .promotion .swiper-button-next {
   position: absolute;
